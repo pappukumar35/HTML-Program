@@ -1,0 +1,12 @@
+const int relayPin = 7;  // the pin that the relay is connected to
+
+void setup() {
+  pinMode(relayPin, OUTPUT);  // set the relay pin as an output
+}
+
+void loop() {
+  digitalWrite(relayPin, HIGH);  // turn the relay on
+  delay(1000);                   // wait for 1 second
+  digitalWrite(relayPin, LOW);   // turn the relay off
+  delay(1000);                   // wait for 1 second
+}
